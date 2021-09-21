@@ -16,9 +16,34 @@
 ### 1 day = 1440 minutes
 ### 1 day = 86400 seconds
 
+### x Million users * y KB = xy GB
+### x Million users * y MB = xy TB
+
 ## Storage required for character
 ### ASCII (1 byte per character)
 ### Unicode
    - UTF-8 (variable: 1, 2, 3, or 4 bytes per character)
    - UTF-16 (variable: 2 or 4 bytes per character)
    - UTF-32 (4 bytes per character)
+### Short: 2B (16 bits)
+### Int: 4B (32 bits)
+### Long: 8B (64 bits)
+### UUID/GUID: 16B
+
+### File: 100 KB
+### Web Page: 100 KB (not including images)
+### Picture: 200 KB
+### Short Posted Video: 2MB
+### Steaming Video: 50MB per minute
+### Long/Lat: 8B
+
+### Maximum URL Size: ~2000 (depends on browser)
+### ASCII charset: 128
+### Unicode charset: 143,859
+
+
+## Per Period Numbers
+The following numbers are heavily rounded and help determine how often something needs to happen over a period of time. For example, if a server has a million requests per day, it will need to handle 12 requests per second.
+
+
+
