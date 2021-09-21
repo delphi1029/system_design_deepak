@@ -15,3 +15,11 @@
 ### 1 hr = 3600 seconds
 ### 1 day = 1440 minutes
 ### 1 day = 86400 seconds
+
+## Storage required for character
+### ASCII (1 byte per character)
+### ASCII (1 byte per character)
+### Unicode
+   - UTF-8 (variable: 1, 2, 3, or 4 bytes per character)
+   - UTF-16 (variable: 2 or 4 bytes per character)
+   - UTF-32 (4 bytes per character)
