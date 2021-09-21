@@ -61,4 +61,45 @@ The following numbers are heavily rounded and help determine how often something
 | Second        |   12 K        |   12        |   0.01     |
 
 
+### More complex example:
+ - 100M photos (200KB) are uploaded daily to a server.
+ - 100 (number of millions) * 12 (the number per second for 1M) = 1200 uploads a second.
+ - 1200 (uploads) * 200KB (size of photo) = 240MB per second.
 
+The web servers will need to handle a network bandwidth of 240MB per second. You will therefore need a machine with high network performance to handle this bandwidth. In AWS this would translate to at least a m4.4xlarge, but it would be better to have multiple smaller servers to handle fault tolerance.
+
+### Users
+ - Facebook: 2.27B | YouTube: 2B | Instagram: 1B
+ - Pinterest: 332M | Twitter: 330M | Onedrive: 250M
+ - TikTok: 3.7M
+
+### Visits
+ - Facebook: 26.12B | Twitter: 6.34B | Pinterest: 1.32B
+ - Spotify: 293M | Ikea: 233M | Nike: 110M
+ - Argos: 54M | John Lewis: 37M |Superdry: 3.5M
+ - Virgin Money: 1.8M | Aviva: 1.61M
+
+### Cost of Operations
+ - Read sequentially from HDD: 30 MB/s
+ - Read sequentially from SSD: 1 GB/s
+ - Read sequentially from memory: 4 GB/s
+ - Read sequentially from 1Gbps Ethernet: 100MB/s
+ - Cross continental network: 6–7 world-wide round trips per second.
+ 
+### SQL Databases
+ - Storage: 60TB
+ - Connections: 30K
+ - Requests: 25K per second
+
+### Cache [Redis — Requests][Redis — connections]
+ - Storage: 300 GB
+ - Connections: 10k
+ - Requests: 100k per second
+ 
+### Web Servers
+ - Requests: 5–10k requests per second
+
+### Queues/Streams
+ - [Pub/Sub — limits][Kinesis — limits][SQS — limits]
+ - Requests: 1000–3000 requests/s
+ - Throughput: 1MB-50MB/s (Write) / 2MB-100MB/s (Read)
