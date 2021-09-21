@@ -18,7 +18,6 @@
 
 ## Storage required for character
 ### ASCII (1 byte per character)
-### ASCII (1 byte per character)
 ### Unicode
    - UTF-8 (variable: 1, 2, 3, or 4 bytes per character)
    - UTF-16 (variable: 2 or 4 bytes per character)
