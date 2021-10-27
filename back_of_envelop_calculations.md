@@ -103,3 +103,16 @@ The web servers will need to handle a network bandwidth of 240MB per second. You
  - [Pub/Sub — limits][Kinesis — limits][SQS — limits]
  - Requests: 1000–3000 requests/s
  - Throughput: 1MB-50MB/s (Write) / 2MB-100MB/s (Read)
+
+### SLA
+
+| Availability % | Downtime per day  |  Downtime per day  |
+| -------------  |:-----------------:|:------------------:|
+| 99 %           |   14.40 minutes   |   3.65 days        |
+| 99.9 %         |   1.44 minutes    |   8.77 hours       |
+| 99.99 %        |   8.64 sec        |   52.6 minutes     |
+| 99.999 %       |   864 millisec    |   5.26 minutes     |
+| 99.9999 %      |   86.40 millisec  |   3.56 seconds     |
+
+
+
